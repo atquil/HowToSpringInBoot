@@ -1,0 +1,6 @@
+rapidAPI:
+  covid:
+    data:
+      url: https://corona-virus-world-and-india-data.p.rapidapi.com/api
+      xRapidApiKey: <YourAPIKey>
+      getxRapidApiHost: <YourAPIHost>
