@@ -175,3 +175,47 @@ Finally, **Grafana** can be **used to visualize these metrics in dashboards** .
    - Put the datasource as : Prometheus 
    - Save the dashboard
 
+## Alerting in Grafana Dashboard
+
+Sending alerts when something went wrong is very iportant. In this we will be sending email for alerts
+
+### Mac
+1. Install Sublime text(Optional) to find smpt : ```brew install --cask sublime-text```
+2. In terminal go to grana folder: ```cd /opt/homebrew/etc/grafana```
+2. Open grafana.ini: ```subl grafana.ini```
+3. Find : ```smtp``` to setup the emailId
+```
+#################################### SMTP / Emailing ##########################
+[smtp]
+enabled = true
+host = smtp.gmail.com:465  ### If it's gmail
+user = <Your Email Id>
+# If the password contains # or ; you have to wrap it with triple quotes. Ex """#password;"""
+password =< GMAIL APP PASSWORD [EMAIL,CUSTOM PASSWORD]>
+```
+4. Save it
+5. Restart the Grafana server
+
+### Windows
+1. Open the grafana folder 
+2. Open the file either grafana.ini or default.ini inside grafana--> cnf folder
+3. Find : ```smtp```
+
+```
+#################################### SMTP / Emailing ##########################
+[smtp]
+enabled = true
+host = smtp.gmail.com:465  ### If it's gmail
+user = <Your Email Id>
+# If the password contains # or ; you have to wrap it with triple quotes. Ex """#password;"""
+password =<GMAIL APP PASSWORD>
+```
+4. Save it . 
+5. Restart the grafana Server
+
+### Inside Grafana 
+
+1. Go Dashboard
+2. Set the Alert condition
+3. When Alert condition is triggered the mail to go the the desired person
+4. YoutubeLink: 
