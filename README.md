@@ -169,10 +169,9 @@ Finally, **Grafana** can be **used to visualize these metrics in dashboards** .
 ## Custom Grafana Dashboard
 
    - You can also import a Spring boot dashboard using json : [Grafana-Spring-Boot-Dashboard-Options](https://grafana.com/grafana/dashboards/?search=springboot&dataSource=prometheus&orderBy=reviewsCount&direction=desc/)
-   - Download the SpringBoot APM Dashboard ( Or any other)
+   - Download the SpringBoot APM Dashboard ( Or any other) e.g. [Prometheus dashboard](https://grafana.com/grafana/dashboards/3662-prometheus-2-0-overview/)
    - Import Dashboard: On top right corner there is a ```+``` button click there --> Import dashboard
    - Put the name for the dashboard
-   - Put the datasource as : Promethius 
+   - Put the datasource as : Prometheus 
    - Save the dashboard
 
-## Alerting in Grafana (Email Alerts)
