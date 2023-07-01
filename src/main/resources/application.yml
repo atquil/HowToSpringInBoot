@@ -8,3 +8,6 @@ management:
   endpoint:
     health:
       show-details: always
+spring:
+  application:
+    name: "Monitoring"

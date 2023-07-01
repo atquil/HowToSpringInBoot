@@ -165,3 +165,14 @@ Finally, **Grafana** can be **used to visualize these metrics in dashboards** .
    - Inside the pannel configuration --> Go to Metrics --> Write any of the metrics that you have from prometheus or select from dropdown
      - E.g. ```disk_total_bytes```
    - Click on ```Save``` then ```Apply```
+
+## Custom Grafana Dashboard
+
+   - You can also import a Spring boot dashboard using json : [Grafana-Spring-Boot-Dashboard-Options](https://grafana.com/grafana/dashboards/?search=springboot&dataSource=prometheus&orderBy=reviewsCount&direction=desc/)
+   - Download the SpringBoot APM Dashboard ( Or any other)
+   - Import Dashboard: On top right corner there is a ```+``` button click there --> Import dashboard
+   - Put the name for the dashboard
+   - Put the datasource as : Promethius 
+   - Save the dashboard
+
+## Alerting in Grafana (Email Alerts)
