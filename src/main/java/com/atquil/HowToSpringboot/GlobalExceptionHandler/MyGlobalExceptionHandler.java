@@ -20,7 +20,7 @@ public class MyGlobalExceptionHandler {
     @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
     public Map<?,?> myNullPointerException(NullPointerException exception){
         Map<String, String> exceptionMap  = new HashMap<>();
-        exceptionMap.put("message",exception.getMessage());
+        exceptionMap.put("message","exception.getMessage()");
         return exceptionMap;
     }
 }
